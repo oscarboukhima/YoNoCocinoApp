@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "693941138496",
+    "project_id": "yonococinoapp",
+    "storage_bucket": "yonococinoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693941138496:android:57fee60c3dac011a945ba5",
+        "android_client_info": {
+          "package_name": "com.example.yonococinoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693941138496-cdjcbjdtos280p9e69cd1m9vkl7rhrlp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvsc7hjNhEMIfmJI9LJUiV1sBnX4kfn4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693941138496-cdjcbjdtos280p9e69cd1m9vkl7rhrlp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
