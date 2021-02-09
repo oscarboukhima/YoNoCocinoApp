@@ -81,6 +81,13 @@ public class SingIn extends AppCompatActivity {
             }
         });
 
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SingIn.this, LogIn.class));
+            }
+        });
+
 
 
 
@@ -112,7 +119,7 @@ public class SingIn extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> taskCrearMapa) {
                             if (taskCrearMapa.isSuccessful()){
-                                startActivity(new Intent(SingIn.this, LogIn.class));
+                                startActivity(new Intent(SingIn.this, Inicio.class));
                                 Toast.makeText(SingIn.this, "Campos correctos", Toast.LENGTH_SHORT).show();
                                 finish();
                             } else {
