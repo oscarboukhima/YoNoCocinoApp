@@ -12,10 +12,15 @@ import com.example.yonococinoapp.fragmentos.RestaurantesFragment;
 import com.example.yonococinoapp.fragmentos.ajustesFragment;
 import com.example.yonococinoapp.fragmentos.carritoFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Inicio extends AppCompatActivity {
 
+
+    private FirebaseAuth firebaseAuth;
     BottomNavigationView bottomNavigationView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

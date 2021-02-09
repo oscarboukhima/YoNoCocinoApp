@@ -31,9 +31,9 @@ public class SingIn extends AppCompatActivity {
     private ImageView logo;
 
 
-    private String nombre = "";
-    private String email = "";
-    private String password = "";
+        private String nombre = "";
+        private String email = "";
+        private String password = "";
 
 
 
