@@ -11,11 +11,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.yonococinoapp.Inicio;
 import com.example.yonococinoapp.R;
 import com.example.yonococinoapp.SingIn;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,26 +66,35 @@ public class ajustesFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-
-
-
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        // Inflate the layout for this fragment
-        View v =  inflater.inflate(R.layout.fragment_ajustes, container, false);
-
         final FirebaseAuth firebaseAuth;
         Button botonCerrarSesion;
-
         firebaseAuth = FirebaseAuth.getInstance();
+        FirebaseDatabase baseDeDatos = FirebaseDatabase.getInstance();
+
+
+        // Inflate the layout for this fragment
+        View v =  inflater.inflate(R.layout.fragment_ajustes, container, false);
+        EditText textEditCambioNombre = (EditText) v.findViewById(R.id.textEditnuevoNombre);
+        TextView prueba = (TextView) v.findViewById(R.id.textViewprueba);
+        String nuevoNombre = textEditCambioNombre.toString();
+
+        EditText textEditCambioContraseña = (EditText) v.findViewById(R.id.textEditnuevaContraseña);
+        String nuevaContraseña = textEditCambioNombre.toString();
 
         botonCerrarSesion = (Button) v.findViewById(R.id.buttonCerrarSesion);
 
+        FirebaseUser usuario =  firebaseAuth.getInstance().getCurrentUser();
+        DatabaseReference nombreDeUsuario;
+        String stringUsuario = usuario.toString();
+
+        textEditCambioNombre.setHint(stringUsuario);
+        prueba.setText(stringUsuario);
 
 
         botonCerrarSesion.setOnClickListener(new View.OnClickListener() {
@@ -89,14 +103,8 @@ public class ajustesFragment extends Fragment {
                 firebaseAuth.signOut();
                 startActivity(new Intent(getActivity(), SingIn.class));
 
-
             }
         });
-
-
-
-
-
         return v;
     }
 

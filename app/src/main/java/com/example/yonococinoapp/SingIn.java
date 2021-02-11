@@ -89,11 +89,6 @@ public class SingIn extends AppCompatActivity {
         });
 
 
-
-
-
-
-
     }
 
 
