@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Inicio extends AppCompatActivity {
 
+    //Hola que ase
 
     private FirebaseAuth firebaseAuth;
     BottomNavigationView bottomNavigationView;
