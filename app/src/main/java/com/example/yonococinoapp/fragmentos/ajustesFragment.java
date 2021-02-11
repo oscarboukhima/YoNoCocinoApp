@@ -28,6 +28,8 @@ import com.google.firebase.database.FirebaseDatabase;
  * create an instance of this fragment.
  */
 
+// VERSION OSCAR 0.3
+
 public class ajustesFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
