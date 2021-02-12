@@ -1,8 +1,10 @@
 package com.example.yonococinoapp.fragmentos;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.yonococinoapp.R;
+import com.example.yonococinoapp.SingIn;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -62,12 +65,23 @@ public class RestaurantesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v =  inflater.inflate(R.layout.fragment_ajustes, container, false);
-
+        View v =  inflater.inflate(R.layout.fragment_restaurantes, container, false);
 
         ImageView BurguerKingLogo = (ImageView) v.findViewById(R.id.ivBurger);
 
+        BurguerKingLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BurguerKing BurguerKingFragment = new BurguerKing();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, BurguerKingFragment, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
 
         return v;
     }
+
+
 }
