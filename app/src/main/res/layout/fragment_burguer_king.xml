@@ -47,7 +47,8 @@
                     app:layout_constraintHorizontal_bias="0.208"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.118" />
+                    app:layout_constraintVertical_bias="0.118"
+                    tools:ignore="RtlCompat" />
 
                 <TextView
                     android:id="@+id/textViewBurguer"
@@ -64,7 +65,8 @@
                     app:layout_constraintHorizontal_bias="0.907"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.06" />
+                    app:layout_constraintVertical_bias="0.06"
+                    tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/buttonAñadirFinal"
@@ -131,7 +133,8 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/textViewPrecioBacon"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="RtlCompat" />
 
                         <RadioButton
                             android:id="@+id/radioButtonBacon"
@@ -252,7 +255,8 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/textViewPrecioWopper"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="RtlCompat" />
 
                         <RadioButton
                             android:id="@+id/radioButtonWopper"
@@ -367,7 +371,8 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/textViewPrecioLongChicken"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="RtlCompat" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
 
