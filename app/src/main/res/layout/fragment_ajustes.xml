@@ -135,7 +135,7 @@
                 android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textViewPrecioBaconChedar"
                 android:layout_width="312dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"

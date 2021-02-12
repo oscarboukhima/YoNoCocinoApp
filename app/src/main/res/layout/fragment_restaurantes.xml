@@ -37,7 +37,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
                     android:orientation="vertical">
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="62dp"
@@ -48,6 +47,7 @@
                             android:layout_width="398dp"
                             android:layout_height="64dp"
                             android:layout_weight="1"
+                            android:foregroundGravity="center"
                             android:src="@drawable/burger" />
 
                         <LinearLayout
@@ -91,6 +91,7 @@
                             android:layout_width="398dp"
                             android:layout_height="74dp"
                             android:layout_weight="1"
+                            android:foregroundGravity="center"
                             android:src="@drawable/cienmon" />
 
                         <LinearLayout
@@ -131,9 +132,10 @@
 
                         <ImageView
                             android:id="@+id/imageView10"
-                            android:layout_width="395dp"
+                            android:layout_width="398dp"
                             android:layout_height="65dp"
                             android:layout_weight="1"
+                            android:foregroundGravity="center"
                             android:src="@drawable/dominos" />
 
                         <LinearLayout
@@ -173,9 +175,10 @@
 
                         <ImageView
                             android:id="@+id/imageView11"
-                            android:layout_width="396dp"
+                            android:layout_width="398dp"
                             android:layout_height="70dp"
                             android:layout_weight="1"
+                            android:foregroundGravity="center"
                             android:src="@drawable/foster" />
 
                         <LinearLayout
@@ -220,6 +223,7 @@
                             android:layout_width="191dp"
                             android:layout_height="69dp"
                             android:layout_weight="1"
+                            android:foregroundGravity="center"
                             android:src="@drawable/vips" />
 
                         <LinearLayout
@@ -263,6 +267,7 @@
                             android:layout_width="190dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:foregroundGravity="center"
                             android:src="@drawable/goiko" />
 
                         <LinearLayout
@@ -307,6 +312,7 @@
                             android:layout_width="189dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
+                            android:foregroundGravity="center"
                             android:src="@drawable/mcdonalds" />
 
                         <LinearLayout
@@ -351,6 +357,7 @@
                             android:layout_width="187dp"
                             android:layout_height="71dp"
                             android:layout_weight="1"
+                            android:foregroundGravity="center"
                             android:src="@drawable/restaurantesopa" />
 
                         <LinearLayout
@@ -395,6 +402,7 @@
                             android:layout_width="186dp"
                             android:layout_height="73dp"
                             android:layout_weight="1"
+                            android:foregroundGravity="center"
                             android:src="@drawable/grill" />
 
                         <LinearLayout
@@ -439,6 +447,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:foregroundGravity="center"
                             android:src="@drawable/kfc" />
 
                         <LinearLayout
