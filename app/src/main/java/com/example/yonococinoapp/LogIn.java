@@ -42,7 +42,6 @@ public class LogIn extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-
         botonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,8 +58,6 @@ public class LogIn extends AppCompatActivity {
                 }
             }
         });
-
-
 
     }
 
