@@ -67,21 +67,6 @@
                     app:layout_constraintVertical_bias="0.06" />
 
                 <Button
-<<<<<<< HEAD
-                    android:id="@+id/buttonAñadirFinal"
-                    android:layout_width="176dp"
-                    android:layout_height="57dp"
-                    android:layout_marginTop="29dp"
-                    android:layout_marginBottom="719dp"
-                    android:background="@color/colorPrincipal"
-                    android:textColor="#FFFFFF"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.497"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewAñadir"
-                    tools:text="Añadir" />
-=======
                     android:layout_width="176dp"
                     android:layout_height="57dp"
                     android:background="@color/colorPrincipal"
@@ -89,7 +74,6 @@
                     app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
                     tools:layout_editor_absoluteY="824dp" />
->>>>>>> ecd61f6... 0.3
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView"
@@ -114,97 +98,46 @@
                             android:id="@+id/textViewPrecioBacon"
                             android:layout_width="76dp"
                             android:layout_height="54dp"
-<<<<<<< HEAD
-                            android:layout_marginStart="3dp"
-                            android:layout_marginTop="24dp"
-                            android:layout_marginBottom="24dp"
-=======
->>>>>>> ecd61f6... 0.3
                             android:gravity="center"
                             android:text="6.99€"
                             android:textColor="#FFFFFF"
                             android:textStyle="bold"
-<<<<<<< HEAD
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/radioButtonBacon"
-                            app:layout_constraintStart_toEndOf="@+id/textViewBacon"
-                            app:layout_constraintTop_toTopOf="parent" />
-=======
                             tools:layout_editor_absoluteX="179dp"
                             tools:layout_editor_absoluteY="24dp" />
->>>>>>> ecd61f6... 0.3
 
                         <TextView
                             android:id="@+id/textViewBacon"
                             android:layout_width="147dp"
                             android:layout_height="38dp"
-<<<<<<< HEAD
-                            android:layout_marginStart="29dp"
-                            android:layout_marginTop="29dp"
-                            android:layout_marginEnd="3dp"
-                            android:layout_marginBottom="35dp"
-=======
->>>>>>> ecd61f6... 0.3
                             android:gravity="center"
                             android:text="Hamburguesa Bacon Cheddar"
                             android:textAlignment="viewStart"
                             android:textColor="#FFFFFF"
-<<<<<<< HEAD
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/textViewPrecioBacon"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-=======
                             tools:layout_editor_absoluteX="29dp"
                             tools:layout_editor_absoluteY="30dp" />
->>>>>>> ecd61f6... 0.3
 
                         <RadioButton
                             android:id="@+id/radioButtonBacon"
                             android:layout_width="60dp"
                             android:layout_height="54dp"
-<<<<<<< HEAD
-                            android:layout_marginTop="24dp"
-
-                            android:layout_marginEnd="20dp"
-                            android:layout_marginBottom="24dp"
-                            android:buttonTint="@color/colorBlanco"
-=======
                             android:buttonTint="@color/colorBlanco"
 
->>>>>>> ecd61f6... 0.3
                             android:gravity="center"
                             android:textAlignment="center"
                             android:textColor="#323232"
                             android:textColorHint="#535353"
-<<<<<<< HEAD
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/textViewPrecioBacon"
-                            app:layout_constraintTop_toTopOf="parent" />
-=======
                             tools:layout_editor_absoluteX="255dp"
                             tools:layout_editor_absoluteY="24dp" />
->>>>>>> ecd61f6... 0.3
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-<<<<<<< HEAD
-                    android:id="@+id/cardView2"
-                    android:layout_width="338dp"
-                    android:layout_height="102dp"
-                    app:cardCornerRadius="10dp"
-
-                    app:layout_constraintBottom_toBottomOf="parent"
-=======
                     android:layout_width="338dp"
                     android:layout_height="102dp"
                     app:cardCornerRadius="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
 
->>>>>>> ecd61f6... 0.3
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.493"
                     app:layout_constraintStart_toStartOf="parent"
@@ -217,21 +150,6 @@
                         android:layout_height="match_parent"
                         android:background="#2196F3">
 
-<<<<<<< HEAD
-                        <TextView
-                            android:id="@+id/textViewBigKing"
-                            android:layout_width="158dp"
-                            android:layout_height="41dp"
-                            android:layout_marginStart="20dp"
-                            android:gravity="center"
-                            android:text="Hamburguesa Big King"
-                            android:textColor="#FFFFFF"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/textViewPrecioBigKing"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.508" />
-=======
                         <RadioButton
                             android:id="@+id/radioButtonBigKing"
                             android:layout_width="60dp"
@@ -244,43 +162,15 @@
                             android:textColorHint="#535353"
                             tools:layout_editor_absoluteX="255dp"
                             tools:layout_editor_absoluteY="24dp" />
->>>>>>> ecd61f6... 0.3
 
                         <TextView
                             android:id="@+id/textViewPrecioBigKing"
                             android:layout_width="76dp"
                             android:layout_height="54dp"
-<<<<<<< HEAD
-                            android:layout_marginTop="24dp"
-                            android:layout_marginBottom="24dp"
-=======
->>>>>>> ecd61f6... 0.3
                             android:gravity="center"
                             android:text="6.99€"
                             android:textColor="#FFFFFF"
                             android:textStyle="bold"
-<<<<<<< HEAD
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/radioButtonBigKing"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.0" />
-
-                        <RadioButton
-                            android:id="@+id/radioButtonBigKing"
-                            android:layout_width="60dp"
-                            android:layout_height="54dp"
-
-                            android:layout_marginEnd="24dp"
-                            android:buttonTint="@color/colorBlanco"
-                            android:gravity="center"
-                            android:textAlignment="center"
-                            android:textColor="#323232"
-                            android:textColorHint="#535353"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-=======
                             tools:layout_editor_absoluteX="179dp"
                             tools:layout_editor_absoluteY="24dp" />
 
@@ -294,7 +184,6 @@
                             android:textColor="#FFFFFF"
                             tools:layout_editor_absoluteX="29dp"
                             tools:layout_editor_absoluteY="30dp" />
->>>>>>> ecd61f6... 0.3
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -320,45 +209,17 @@
                             android:id="@+id/textViewWopper"
                             android:layout_width="152dp"
                             android:layout_height="54dp"
-<<<<<<< HEAD
-                            android:layout_marginStart="27dp"
-                            android:layout_marginTop="24dp"
-                            android:layout_marginBottom="24dp"
-                            android:gravity="center"
-                            android:text="Hamburguesa Wopper"
-                            android:textAlignment="textStart"
-                            android:textColor="#FFFFFF"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/textViewPrecioWopper"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-=======
                             android:gravity="center"
                             android:text="Hamburguesa Wopper"
                             android:textAlignment="vieawStart"
                             android:textColor="#FFFFFF"
                             tools:layout_editor_absoluteX="27dp"
                             tools:layout_editor_absoluteY="24dp" />
->>>>>>> ecd61f6... 0.3
 
                         <RadioButton
                             android:id="@+id/radioButtonWopper"
                             android:layout_width="60dp"
                             android:layout_height="54dp"
-<<<<<<< HEAD
-                            android:layout_marginTop="24dp"
-
-                            android:layout_marginEnd="23dp"
-                            android:layout_marginBottom="24dp"
-                            android:buttonTint="@color/colorBlanco"
-                            android:textAlignment="center"
-                            android:textColor="#323232"
-                            android:textColorHint="#535353"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/textViewPrecioWopper"
-                            app:layout_constraintTop_toTopOf="parent" />
-=======
                             android:buttonTint="@color/colorBlanco"
 
                             android:textAlignment="center"
@@ -366,30 +227,17 @@
                             android:textColorHint="#535353"
                             tools:layout_editor_absoluteX="255dp"
                             tools:layout_editor_absoluteY="24dp" />
->>>>>>> ecd61f6... 0.3
 
                         <TextView
                             android:id="@+id/textViewPrecioWopper"
                             android:layout_width="76dp"
                             android:layout_height="54dp"
-<<<<<<< HEAD
-                            android:layout_marginTop="24dp"
-                            android:layout_marginBottom="24dp"
-=======
->>>>>>> ecd61f6... 0.3
                             android:gravity="center"
                             android:text="7.99€"
                             android:textColor="#FFFFFF"
                             android:textStyle="bold"
-<<<<<<< HEAD
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/radioButtonWopper"
-                            app:layout_constraintStart_toEndOf="@+id/textViewWopper"
-                            app:layout_constraintTop_toTopOf="parent" />
-=======
                             tools:layout_editor_absoluteX="179dp"
                             tools:layout_editor_absoluteY="24dp" />
->>>>>>> ecd61f6... 0.3
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -397,43 +245,19 @@
                     android:id="@+id/textViewAñadir"
                     android:layout_width="313dp"
                     android:layout_height="46dp"
-<<<<<<< HEAD
-                    android:layout_marginTop="53dp"
-                    android:layout_marginBottom="14dp"
-                    android:text="Seleccion los productos que quiera comprar para añadir al carrito"
-                    android:textColor="#FFFFFF"
-                    app:layout_constraintBottom_toTopOf="@+id/buttonAñadirFinal"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cardView" />
-=======
                     android:text="Seleccion los productos que quiera comprar para añadir al carrito"
                     android:textColor="#FFFFFF"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     tools:layout_editor_absoluteY="749dp" />
->>>>>>> ecd61f6... 0.3
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="338dp"
                     android:layout_height="102dp"
-<<<<<<< HEAD
-                    android:layout_marginStart="36dp"
-
-                    android:layout_marginTop="22dp"
-                    android:layout_marginEnd="36dp"
-                    android:layout_marginBottom="17dp"
-                    app:cardCornerRadius="10dp"
-                    app:layout_constraintBottom_toTopOf="@+id/cardView"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cardView2">
-=======
                     app:cardCornerRadius="10dp"
 
                     tools:layout_editor_absoluteX="36dp"
                     tools:layout_editor_absoluteY="506dp">
->>>>>>> ecd61f6... 0.3
 
                     <androidx.constraintlayout.widget.ConstraintLayout
 
@@ -445,79 +269,36 @@
                             android:id="@+id/textViewPrecioLongChicken"
                             android:layout_width="76dp"
                             android:layout_height="54dp"
-<<<<<<< HEAD
-                            android:layout_marginStart="2dp"
-                            android:layout_marginTop="24dp"
-                            android:layout_marginBottom="24dp"
-=======
->>>>>>> ecd61f6... 0.3
                             android:gravity="center"
                             android:text="5.99€"
                             android:textColor="#FFFFFF"
                             android:textStyle="bold"
-<<<<<<< HEAD
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/textView"
-                            app:layout_constraintTop_toTopOf="parent" />
-=======
                             tools:layout_editor_absoluteX="179dp"
                             tools:layout_editor_absoluteY="24dp" />
->>>>>>> ecd61f6... 0.3
 
                         <RadioButton
                             android:id="@+id/radioButtonLongChicken"
                             android:layout_width="60dp"
                             android:layout_height="54dp"
-<<<<<<< HEAD
-                            android:layout_marginStart="1dp"
-
-                            android:layout_marginTop="24dp"
-                            android:layout_marginEnd="23dp"
-                            android:layout_marginBottom="24dp"
-                            android:buttonTint="@color/colorBlanco"
-=======
                             android:buttonTint="@color/colorBlanco"
 
->>>>>>> ecd61f6... 0.3
                             android:gravity="center"
                             android:textAlignment="center"
                             android:textColor="#323232"
                             android:textColorHint="#535353"
-<<<<<<< HEAD
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/textViewPrecioLongChicken"
-                            app:layout_constraintTop_toTopOf="parent" />
-=======
                             tools:layout_editor_absoluteX="255dp"
                             tools:layout_editor_absoluteY="24dp" />
->>>>>>> ecd61f6... 0.3
 
                         <TextView
                             android:id="@+id/textView"
                             android:layout_width="147dp"
-<<<<<<< HEAD
-                            android:layout_height="0dp"
-                            android:layout_marginStart="29dp"
-                            android:layout_marginTop="30dp"
-                            android:layout_marginEnd="2dp"
-                            android:layout_marginBottom="36dp"
-=======
                             android:layout_height="38dp"
->>>>>>> ecd61f6... 0.3
                             android:gravity="center"
                             android:text="Hamburguesa Long Chickenking"
                             android:textAlignment="viewStart"
                             android:textColor="#FFFFFF"
-<<<<<<< HEAD
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/textViewPrecioLongChicken"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-=======
                             tools:layout_editor_absoluteX="29dp"
                             tools:layout_editor_absoluteY="30dp" />
->>>>>>> ecd61f6... 0.3
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
 
