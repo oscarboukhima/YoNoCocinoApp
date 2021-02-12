@@ -35,7 +35,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="62dp"
+                    android:layout_height="64dp"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
@@ -46,14 +46,14 @@
 
                         <ImageView
                             android:id="@+id/ivBurger"
-                            android:layout_width="398dp"
+                            android:layout_width="400dp"
                             android:layout_height="64dp"
                             android:layout_weight="1"
                             android:src="@drawable/burger" />
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_width="420dp"
+                            android:layout_height="64dp"
                             android:layout_weight="1"
                             android:orientation="vertical">
 
@@ -78,7 +78,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="73dp"
+                    android:layout_height="64dp"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
@@ -89,13 +89,13 @@
 
                         <ImageView
                             android:id="@+id/iv100mon"
-                            android:layout_width="398dp"
-                            android:layout_height="74dp"
+                            android:layout_width="400dp"
+                            android:layout_height="64dp"
                             android:layout_weight="1"
                             android:src="@drawable/cienmon" />
 
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="420dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:orientation="vertical">
@@ -121,7 +121,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="66dp"
+                    android:layout_height="64dp"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
@@ -132,13 +132,13 @@
 
                         <ImageView
                             android:id="@+id/imageView10"
-                            android:layout_width="398dp"
-                            android:layout_height="65dp"
+                            android:layout_width="400dp"
+                            android:layout_height="64dp"
                             android:layout_weight="1"
                             android:src="@drawable/dominos" />
 
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="420dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:orientation="vertical">
@@ -163,7 +163,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="70dp"
+                    android:layout_height="64dp"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
@@ -174,13 +174,13 @@
 
                         <ImageView
                             android:id="@+id/imageView11"
-                            android:layout_width="398dp"
-                            android:layout_height="70dp"
+                            android:layout_width="400dp"
+                            android:layout_height="64dp"
                             android:layout_weight="1"
                             android:src="@drawable/foster" />
 
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="420dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:orientation="vertical">
@@ -207,7 +207,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="64dp"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
@@ -218,13 +218,13 @@
 
                         <ImageView
                             android:id="@+id/imageView12"
-                            android:layout_width="191dp"
-                            android:layout_height="69dp"
+                            android:layout_width="400dp"
+                            android:layout_height="64dp"
                             android:layout_weight="1"
                             android:src="@drawable/vips" />
 
                         <LinearLayout
-                            android:layout_width="207dp"
+                            android:layout_width="420dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:orientation="vertical">
@@ -250,7 +250,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="69dp"
+                    android:layout_height="64dp"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
@@ -261,13 +261,13 @@
 
                         <ImageView
                             android:id="@+id/imageView14"
-                            android:layout_width="194dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="400dp"
+                            android:layout_height="64dp"
                             android:layout_weight="1"
                             android:src="@drawable/goiko" />
 
                         <LinearLayout
-                            android:layout_width="207dp"
+                            android:layout_width="420dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:orientation="vertical">
@@ -294,7 +294,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="71dp"
+                    android:layout_height="64dp"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
@@ -305,13 +305,13 @@
 
                         <ImageView
                             android:id="@+id/imageView"
-                            android:layout_width="189dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="400dp"
+                            android:layout_height="64dp"
                             android:layout_weight="1"
                             android:src="@drawable/mcdonalds" />
 
                         <LinearLayout
-                            android:layout_width="207dp"
+                            android:layout_width="420dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:orientation="vertical">
@@ -338,7 +338,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="64dp"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
@@ -348,14 +348,13 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="187dp"
-                            android:layout_height="71dp"
+                            android:layout_width="400dp"
+                            android:layout_height="64dp"
                             android:layout_weight="1"
                             android:src="@drawable/restaurantesopa" />
 
                         <LinearLayout
-                            android:layout_width="207dp"
+                            android:layout_width="420dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:orientation="vertical">
@@ -382,7 +381,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="73dp"
+                    android:layout_height="64dp"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
@@ -393,13 +392,13 @@
 
                         <ImageView
                             android:id="@+id/imageView4"
-                            android:layout_width="186dp"
-                            android:layout_height="73dp"
+                            android:layout_width="400dp"
+                            android:layout_height="64dp"
                             android:layout_weight="1"
                             android:src="@drawable/grill" />
 
                         <LinearLayout
-                            android:layout_width="207dp"
+                            android:layout_width="420dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:orientation="vertical">
@@ -414,7 +413,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="52dp"
-                                android:gravity="center_horizontal|center_vertical"
+                                android:gravity="center_vertical"
                                 android:text='"Solo para personas hambrientas"'
                                 android:textColor="@color/colorBlanco" />
 
@@ -426,7 +425,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="79dp"
+                    android:layout_height="64dp"
                     android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
@@ -437,14 +436,14 @@
 
                         <ImageView
                             android:id="@+id/imageView9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="400dp"
+                            android:layout_height="64dp"
                             android:layout_weight="1"
                             android:src="@drawable/kfc" />
 
                         <LinearLayout
-                            android:layout_width="217dp"
-                            android:layout_height="64dp"
+                            android:layout_width="205dp"
+                            android:layout_height="match_parent"
                             android:orientation="vertical">
 
                             <TextView
@@ -458,7 +457,7 @@
                             <TextView
                                 android:id="@+id/textView19"
                                 android:layout_width="match_parent"
-                                android:layout_height="52dp"
+                                android:layout_height="40dp"
                                 android:gravity="center_vertical"
                                 android:text='"Para chuparse los dedos"'
                                 android:textColor="@color/colorBlanco" />
