@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Inicio extends AppCompatActivity {
 
-    //Hola que ase
+
 
     private FirebaseAuth firebaseAuth;
     BottomNavigationView bottomNavigationView;
@@ -29,9 +29,11 @@ public class Inicio extends AppCompatActivity {
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.menuNavegacion);
 
+
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
 
                 if (menuItem.getItemId() == R.id.restaurantes){
                     showSelectedFragment(new RestaurantesFragment());

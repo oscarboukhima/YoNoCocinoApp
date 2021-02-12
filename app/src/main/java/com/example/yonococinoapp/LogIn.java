@@ -31,9 +31,6 @@ public class LogIn extends AppCompatActivity {
     private String password = "";
 
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +41,6 @@ public class LogIn extends AppCompatActivity {
         botonLogin = (Button) findViewById(R.id.buttonLogIn);
 
         firebaseAuth = FirebaseAuth.getInstance();
-
 
         botonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,8 +58,6 @@ public class LogIn extends AppCompatActivity {
                 }
             }
         });
-
-
 
     }
 
