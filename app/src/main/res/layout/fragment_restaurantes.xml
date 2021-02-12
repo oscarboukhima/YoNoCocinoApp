@@ -36,6 +36,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="62dp"
+                    android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -59,7 +60,6 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
                                 android:text="Burger King"
                                 android:textColor="@color/colorBlanco"
                                 android:textSize="18sp" />
@@ -68,7 +68,7 @@
                                 android:id="@+id/tvDominosB"
                                 android:layout_width="match_parent"
                                 android:layout_height="42dp"
-                                android:gravity="center_horizontal|center_vertical"
+                                android:gravity="center_vertical"
                                 android:text='"Home of the Whopper"'
                                 android:textColor="@color/colorBlanco" />
                         </LinearLayout>
@@ -79,6 +79,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="73dp"
+                    android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -103,7 +104,6 @@
                                 android:id="@+id/tvDominosA"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
                                 android:text="100 Montaditos"
                                 android:textColor="@color/colorBlanco"
                                 android:textSize="18sp" />
@@ -111,7 +111,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="53dp"
-                                android:gravity="center_horizontal|center_vertical"
+                                android:gravity="center_vertical"
                                 android:text='"Pequeños momentos,                                grandes historias"'
                                 android:textColor="@color/colorBlanco" />
                         </LinearLayout>
@@ -122,6 +122,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="66dp"
+                    android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -131,7 +132,7 @@
 
                         <ImageView
                             android:id="@+id/imageView10"
-                            android:layout_width="395dp"
+                            android:layout_width="398dp"
                             android:layout_height="65dp"
                             android:layout_weight="1"
                             android:src="@drawable/dominos" />
@@ -145,7 +146,6 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
                                 android:text="Domino's pizza"
                                 android:textColor="@color/colorBlanco"
                                 android:textSize="18sp" />
@@ -153,7 +153,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="46dp"
-                                android:gravity="center|center_horizontal|center_vertical"
+                                android:gravity="center_vertical"
                                 android:text='"Vender mas pizza, tener mas diversion"'
                                 android:textColor="@color/colorBlanco" />
                         </LinearLayout>
@@ -164,6 +164,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
+                    android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -173,7 +174,7 @@
 
                         <ImageView
                             android:id="@+id/imageView11"
-                            android:layout_width="396dp"
+                            android:layout_width="398dp"
                             android:layout_height="70dp"
                             android:layout_weight="1"
                             android:src="@drawable/foster" />
@@ -187,7 +188,6 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
                                 android:text="Foster's Hollywood"
                                 android:textColor="@color/colorBlanco"
                                 android:textSize="18sp" />
@@ -196,7 +196,7 @@
                                 android:id="@+id/textView18"
                                 android:layout_width="match_parent"
                                 android:layout_height="51dp"
-                                android:gravity="center_horizontal|center_vertical"
+                                android:gravity="center_vertical"
                                 android:text='"Los mejores platos son los que se comparten"'
                                 android:textColor="@color/colorBlanco" />
 
@@ -208,6 +208,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -231,7 +232,6 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
                                 android:text="Vips"
                                 android:textColor="@color/colorBlanco"
                                 android:textSize="18sp" />
@@ -239,7 +239,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="52dp"
-                                android:gravity="center_horizontal|center_vertical"
+                                android:gravity="center_vertical"
                                 android:text='"Muy abierto"'
                                 android:textColor="@color/colorBlanco" />
 
@@ -251,6 +251,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="69dp"
+                    android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -260,7 +261,7 @@
 
                         <ImageView
                             android:id="@+id/imageView14"
-                            android:layout_width="190dp"
+                            android:layout_width="194dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:src="@drawable/goiko" />
@@ -274,7 +275,6 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
                                 android:text="Goiko"
                                 android:textColor="@color/colorBlanco"
                                 android:textSize="18sp" />
@@ -282,7 +282,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="52dp"
-                                android:gravity="center_horizontal|center_vertical"
+                                android:gravity="center_vertical"
                                 android:text='"hacemos burgers,                     cocinamos historias"'
                                 android:textColor="@color/colorBlanco" />
 
@@ -295,6 +295,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="71dp"
+                    android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -318,7 +319,6 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
                                 android:text="McDonald's"
                                 android:textColor="@color/colorBlanco"
                                 android:textSize="18sp" />
@@ -326,7 +326,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="52dp"
-                                android:gravity="center_horizontal|center_vertical"
+                                android:gravity="center_vertical"
                                 android:text='"Lovin´ beat hatin"'
                                 android:textColor="@color/colorBlanco" />
 
@@ -339,6 +339,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -362,7 +363,6 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
                                 android:text="Restaurante Desván"
                                 android:textColor="@color/colorBlanco"
                                 android:textSize="18sp" />
@@ -370,7 +370,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="52dp"
-                                android:gravity="center_horizontal|center_vertical"
+                                android:gravity="center_vertical"
                                 android:text='"Más allá de los límites del gusto"'
                                 android:textColor="@color/colorBlanco" />
 
@@ -383,6 +383,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="73dp"
+                    android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -406,7 +407,6 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
                                 android:text="Restaurante Beer and Grill"
                                 android:textColor="@color/colorBlanco"
                                 android:textSize="18sp" />
@@ -427,6 +427,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="79dp"
+                    android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -450,7 +451,6 @@
                                 android:id="@+id/textView17"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:gravity="center"
                                 android:text="KFC"
                                 android:textColor="@color/colorBlanco"
                                 android:textSize="18sp" />
@@ -459,7 +459,7 @@
                                 android:id="@+id/textView19"
                                 android:layout_width="match_parent"
                                 android:layout_height="52dp"
-                                android:gravity="center_horizontal|center_vertical"
+                                android:gravity="center_vertical"
                                 android:text='"Para chuparse los dedos"'
                                 android:textColor="@color/colorBlanco" />
                         </LinearLayout>
