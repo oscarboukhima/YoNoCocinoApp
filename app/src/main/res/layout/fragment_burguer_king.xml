@@ -20,7 +20,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="1600dp">
+                android:layout_height="917dp">
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -44,10 +44,10 @@
                     android:textSize="24sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.208"
+                    app:layout_constraintHorizontal_bias="0.213"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.118"
+                    app:layout_constraintVertical_bias="0.213"
                     tools:ignore="RtlCompat" />
 
                 <TextView
@@ -65,22 +65,21 @@
                     app:layout_constraintHorizontal_bias="0.907"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.06"
+                    app:layout_constraintVertical_bias="0.124"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/buttonAñadirFinal"
                     android:layout_width="176dp"
                     android:layout_height="57dp"
-                    android:layout_marginTop="29dp"
-                    android:layout_marginBottom="719dp"
                     android:background="@color/colorPrincipal"
                     android:textColor="#FFFFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintHorizontal_bias="0.446"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textViewAñadir"
+                    app:layout_constraintVertical_bias="0.65"
                     tools:text="Añadir" />
 
                 <androidx.cardview.widget.CardView
@@ -94,11 +93,11 @@
                     app:layout_constraintHorizontal_bias="0.493"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.417">
+                    app:layout_constraintVertical_bias="0.752">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
 
-                        android:layout_width="match_parent"
+                        android:layout_width="322dp"
                         android:layout_height="match_parent"
                         android:background="#3F51B5">
 
@@ -158,72 +157,6 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView2"
-                    android:layout_width="338dp"
-                    android:layout_height="102dp"
-                    app:cardCornerRadius="10dp"
-
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.493"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.255">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#2196F3">
-
-                        <TextView
-                            android:id="@+id/textViewBigKing"
-                            android:layout_width="158dp"
-                            android:layout_height="41dp"
-                            android:layout_marginStart="20dp"
-                            android:gravity="center"
-                            android:text="Hamburguesa Big King"
-                            android:textColor="#FFFFFF"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/textViewPrecioBigKing"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.508" />
-
-                        <TextView
-                            android:id="@+id/textViewPrecioBigKing"
-                            android:layout_width="76dp"
-                            android:layout_height="54dp"
-                            android:layout_marginTop="24dp"
-                            android:layout_marginBottom="24dp"
-                            android:gravity="center"
-                            android:text="6.99€"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/radioButtonBigKing"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.0" />
-
-                        <RadioButton
-                            android:id="@+id/radioButtonBigKing"
-                            android:layout_width="60dp"
-                            android:layout_height="54dp"
-
-                            android:layout_marginEnd="24dp"
-                            android:buttonTint="@color/colorBlanco"
-                            android:gravity="center"
-                            android:textAlignment="center"
-                            android:textColor="#323232"
-                            android:textColorHint="#535353"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
                     android:layout_width="338dp"
                     android:layout_height="102dp"
                     app:cardCornerRadius="10dp"
@@ -233,11 +166,11 @@
                     app:layout_constraintHorizontal_bias="0.493"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.168">
+                    app:layout_constraintVertical_bias="0.307">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
 
-                        android:layout_width="match_parent"
+                        android:layout_width="321dp"
                         android:layout_height="match_parent"
                         android:background="#009688">
 
@@ -292,16 +225,6 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:id="@+id/textViewAñadir"
-                    android:layout_width="313dp"
-                    android:layout_height="46dp"
-                    android:text="Seleccion los productos que quiera comprar para añadir al carrito"
-                    android:textColor="#FFFFFF"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    tools:layout_editor_absoluteY="780dp" />
-
                 <androidx.cardview.widget.CardView
                     android:layout_width="338dp"
                     android:layout_height="102dp"
@@ -313,12 +236,14 @@
                     app:cardCornerRadius="10dp"
                     app:layout_constraintBottom_toTopOf="@+id/cardView"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/cardView2">
+                    app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                    app:layout_constraintVertical_bias="0.666">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
 
-                        android:layout_width="match_parent"
+                        android:layout_width="313dp"
                         android:layout_height="match_parent"
                         android:background="#00BCD4">
 
@@ -375,6 +300,83 @@
                             tools:ignore="RtlCompat" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="338dp"
+                    android:layout_height="102dp"
+                    app:cardCornerRadius="10dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.45">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="316dp"
+                        android:layout_height="match_parent"
+                        android:background="#2196F3">
+
+                        <TextView
+                            android:id="@+id/textViewBigKing"
+                            android:layout_width="158dp"
+                            android:layout_height="41dp"
+                            android:layout_marginStart="20dp"
+                            android:gravity="center"
+                            android:text="Hamburguesa Big King"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textViewPrecioBigKing"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.508" />
+
+                        <TextView
+                            android:id="@+id/textViewPrecioBigKing"
+                            android:layout_width="76dp"
+                            android:layout_height="54dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="6.99€"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/radioButtonBigKing"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonBigKing"
+                            android:layout_width="60dp"
+                            android:layout_height="54dp"
+
+                            android:layout_marginEnd="24dp"
+                            android:buttonTint="@color/colorBlanco"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#323232"
+                            android:textColorHint="#535353"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textViewAñadir"
+                    android:layout_width="313dp"
+                    android:layout_height="46dp"
+                    android:text="Seleccion los productos que quiera comprar para añadir al carrito"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.377"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="760dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

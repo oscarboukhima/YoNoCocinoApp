@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.Toast;
 
 import com.example.yonococinoapp.R;
 
@@ -26,6 +29,20 @@ public class BurguerKing extends Fragment {
     private String mParam1;
     private String mParam2;
 
+
+    final double precioInicial = 0;
+    double precioTotalFinal;
+
+    
+
+    final double precioWopper = 7.99 ;
+    double precioBigKing = 6.99;
+    double precioLongChicken = 5.99;
+    double precioBacon = 6.99;
+    int numeroDeProductos = 0;
+
+     
+    
     public BurguerKing() {
         // Required empty public constructor
     }
@@ -61,6 +78,63 @@ public class BurguerKing extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_burguer_king, container, false);
+        
+       
+
+
+
+        final View v =  inflater.inflate(R.layout.fragment_burguer_king, container, false);
+
+        final RadioButton radioButtonWopper = (RadioButton) v.findViewById(R.id.radioButtonWopper) ;
+        final RadioButton radioButtonBacon = (RadioButton) v.findViewById(R.id.radioButtonBacon) ;
+        final RadioButton radioButtonLongChicken = (RadioButton) v.findViewById(R.id.radioButtonLongChicken) ;
+        final RadioButton radioButtonBigKing = (RadioButton) v.findViewById(R.id.radioButtonBigKing) ;
+
+        Button botonAñadir = (Button) v.findViewById(R.id.buttonAñadirFinal);
+
+        
+        
+        
+        
+        
+        botonAñadir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                for (int i = 0; i < 1 ; i++) {
+                    if (radioButtonWopper.isSelected()){
+                        precioTotalFinal =+ precioWopper;
+                        numeroDeProductos = numeroDeProductos+1;
+                    } else if (radioButtonBigKing.isSelected()){
+                        precioTotalFinal =+ precioBigKing;
+                        numeroDeProductos = numeroDeProductos+1;
+                    } else if (radioButtonLongChicken.isSelected()){
+                        precioTotalFinal =+ precioLongChicken;
+                        numeroDeProductos = numeroDeProductos+1;
+                    } else if (radioButtonBacon.isSelected()){
+                        precioTotalFinal =+ precioBacon;
+                        numeroDeProductos = numeroDeProductos+1;
+                    } else {
+                        precioTotalFinal = 0;
+                    }
+                    
+                    setPrecioTotalFinal(precioTotalFinal);
+                    Toast.makeText(getActivity(), "Se han añadido " + numeroDeProductos + "Productos  : " + precioTotalFinal, Toast.LENGTH_SHORT).show();
+
+                }
+            }
+        });
+        
+        return v;
     }
+
+    
+    
+    public double getPrecioTotalFinal() {
+        return precioTotalFinal;
+    }
+
+    public void setPrecioTotalFinal(double precioTotalFinal) {
+        this.precioTotalFinal = precioTotalFinal;
+    }
+    
 }
