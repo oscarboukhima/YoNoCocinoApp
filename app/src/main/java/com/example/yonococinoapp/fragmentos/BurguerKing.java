@@ -1,5 +1,6 @@
 package com.example.yonococinoapp.fragmentos;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -31,15 +32,17 @@ public class BurguerKing extends Fragment {
 
 
     final double precioInicial = 0;
-    double precioTotalFinal;
 
-    
 
-    final double precioWopper = 7.99 ;
+
+    double precioTotalFinal = 0;
+    double precioWopper = 7.99 ;
     double precioBigKing = 6.99;
     double precioLongChicken = 5.99;
     double precioBacon = 6.99;
-    int numeroDeProductos = 0;
+    String tiempoDeEspera ;
+    int unNumero = 100;
+
 
      
     
@@ -93,48 +96,107 @@ public class BurguerKing extends Fragment {
         Button botonAñadir = (Button) v.findViewById(R.id.buttonAñadirFinal);
 
         
-        
-        
-        
-        
         botonAñadir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 for (int i = 0; i < 1 ; i++) {
-                    if (radioButtonWopper.isSelected()){
-                        precioTotalFinal =+ precioWopper;
+                    precioTotalFinal =0;
+                    int numeroDeProductos = 0;
+
+                    if (radioButtonWopper.isChecked()){
+                        precioTotalFinal = precioTotalFinal +precioWopper;
                         numeroDeProductos = numeroDeProductos+1;
-                    } else if (radioButtonBigKing.isSelected()){
-                        precioTotalFinal =+ precioBigKing;
+                    }
+                    if (radioButtonBigKing.isChecked()){
+                        precioTotalFinal =precioTotalFinal+ precioBigKing;
                         numeroDeProductos = numeroDeProductos+1;
-                    } else if (radioButtonLongChicken.isSelected()){
-                        precioTotalFinal =+ precioLongChicken;
+                    }
+                    if (radioButtonLongChicken.isChecked()){
+                        precioTotalFinal =precioTotalFinal+ precioLongChicken;
                         numeroDeProductos = numeroDeProductos+1;
-                    } else if (radioButtonBacon.isSelected()){
-                        precioTotalFinal =+ precioBacon;
+                    }
+                    if (radioButtonBacon.isChecked()){
+                        precioTotalFinal = precioTotalFinal+ precioBacon;
                         numeroDeProductos = numeroDeProductos+1;
-                    } else {
-                        precioTotalFinal = 0;
                     }
                     
                     setPrecioTotalFinal(precioTotalFinal);
                     Toast.makeText(getActivity(), "Se han añadido " + numeroDeProductos + "Productos  : " + precioTotalFinal, Toast.LENGTH_SHORT).show();
 
+                    switch(numeroDeProductos) {
+                        case 1:
+                            tiempoDeEspera = "30 MINUTOS";
+                            setTiempoDeEspera(tiempoDeEspera);
+                            break;
+                        case 2:
+                            tiempoDeEspera = "45MINUTOS";
+                            setTiempoDeEspera(tiempoDeEspera);
+                            break;
+                        case 3:
+                            tiempoDeEspera = "50 MINUTOS";
+                            setTiempoDeEspera(tiempoDeEspera);
+                            break;
+                        case 4:
+                            tiempoDeEspera = "1 HORA Y 10 MINUTOS";
+                            setTiempoDeEspera(tiempoDeEspera);
+                            break;
+                        default:
+                            tiempoDeEspera = "0";
+                            setTiempoDeEspera(tiempoDeEspera);
+                    }
+
+
+                    radioButtonBacon.setChecked(false);
+                    radioButtonBigKing.setChecked(false);
+                    radioButtonLongChicken.setChecked(false);
+                    radioButtonWopper.setChecked(false);
+
+                    Bundle bundle = new Bundle();
+                    Bundle bundleTiempoDeEspera = new Bundle();
+
+                    bundle.putString("key", Double.toString(getPrecioTotalFinal()));
+                    bundleTiempoDeEspera.putString("key", getTiempoDeEspera());
+
+                    Fragment fragment = new carritoFragment();
+                    fragment.setArguments(bundle);
+                    //fragment.setArguments(bundleTiempoDeEspera);
+
+                    getActivity().getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.container, fragment, "findThisFragment")
+                            .addToBackStack(null)
+                            .commit();
                 }
+                System.out.println(" geter :"+getPrecioTotalFinal());
             }
         });
         
         return v;
     }
 
+
     
     
-    public double getPrecioTotalFinal() {
+    public double  getPrecioTotalFinal() {
+
         return precioTotalFinal;
+
     }
 
-    public void setPrecioTotalFinal(double precioTotalFinal) {
+    public  void setPrecioTotalFinal(  double precioTotalFinal) {
         this.precioTotalFinal = precioTotalFinal;
+        System.out.println(precioTotalFinal);
+
     }
-    
+
+    public String getTiempoDeEspera() {
+        return tiempoDeEspera;
+    }
+
+    public void setTiempoDeEspera(String tiempoDeEspera) {
+        this.tiempoDeEspera = tiempoDeEspera;
+    }
+
+
+
+
 }

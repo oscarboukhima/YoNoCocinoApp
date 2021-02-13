@@ -73,10 +73,7 @@ public class RestaurantesFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 BurguerKing BurguerKingFragment = new BurguerKing();
-                getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.container, BurguerKingFragment, "findThisFragment")
-                        .addToBackStack(null)
-                        .commit();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, BurguerKingFragment, "findThisFragment").addToBackStack(null).commit();
             }
         });
 

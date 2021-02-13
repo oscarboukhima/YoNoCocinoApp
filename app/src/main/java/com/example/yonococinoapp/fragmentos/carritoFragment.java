@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.yonococinoapp.R;
 
@@ -16,6 +17,10 @@ import com.example.yonococinoapp.R;
  * create an instance of this fragment.
  */
 public class carritoFragment extends Fragment {
+
+
+
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -54,13 +59,46 @@ public class carritoFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+
         }
+
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView (LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_carrito, container, false);
+        final View v =  inflater.inflate(R.layout.fragment_carrito, container, false);
+
+
+        BurguerKing bk = new BurguerKing();
+        System.out.println(bk.getPrecioTotalFinal());
+        final Bundle bundle = this.getArguments();
+        //final Bundle bundle2 = this.getArguments();
+
+
+        final String precioFinalProducto = bundle.getString("key");
+        //final String tiempoDeEsperaFinal =  bundle2.getString("TiE");
+
+
+
+
+          TextView totalAPagar = (TextView) v.findViewById(R.id.textViewTotal);
+         // TextView tiempoDeEspera = (TextView) v.findViewById(R.id.textViewTiempoEspera);
+
+         if (totalAPagar == null){
+             totalAPagar.setText("0 €");
+         } else {
+             totalAPagar.setText(precioFinalProducto);
+
+         }
+
+        //if (tiempoDeEspera == null){
+        //            tiempoDeEspera.setText(" ");
+        //        } else {
+        //            tiempoDeEspera.setText(tiempoDeEsperaFinal);
+        //        }
+
+     return v;
     }
 }
