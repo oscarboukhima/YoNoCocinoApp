@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.yonococinoapp.R;
@@ -72,32 +73,59 @@ public class carritoFragment extends Fragment {
 
 
         BurguerKing bk = new BurguerKing();
-        System.out.println(bk.getPrecioTotalFinal());
+        CienMon cienMon = new CienMon();
+        Dominos dominos = new Dominos();
+        Foster foster = new Foster();
+        Goiko goiko = new Goiko();
+        KFC kfc = new KFC();
+        McDonalds mcDonalds = new McDonalds();
+        Restaurante1 restaurante1 = new Restaurante1();
+        Restaurante2 restaurante2 = new Restaurante2();
+        Vips vips = new Vips();
+
+
+        //System.out.println(bk.getPrecioTotalFinal());
         final Bundle bundle = this.getArguments();
-        //final Bundle bundle2 = this.getArguments();
+
+        //String precioFinalProductoBurgerKing = "SIN PRODUCTOS";
+        //String tiempoDeEsperaFinalBurguerKing = "SIN PRODCUTOS";
+
+        /* --------------------------------------------------------------------*/
+
+         String precioFinalProductoBurgerKing = bundle.getString("key");
+         String tiempoDeEsperaFinalBurguerKing = bundle.getString("key2");
+         String totalProdcutosBurguerKing = bundle.getString("key3");
 
 
-        final String precioFinalProducto = bundle.getString("key");
-        //final String tiempoDeEsperaFinal =  bundle2.getString("TiE");
+          TextView totalAPagarBurguerKing = (TextView) v.findViewById(R.id.textViewTotalPedido);
+          TextView tiempoDeEsperaBurguerKing = (TextView) v.findViewById(R.id.textViewTiempoEspera);
+          TextView textViewProductosBurguerKing =  (TextView) v.findViewById(R.id.textViewProductosAñadidos);
 
-
-
-
-          TextView totalAPagar = (TextView) v.findViewById(R.id.textViewTotal);
-         // TextView tiempoDeEspera = (TextView) v.findViewById(R.id.textViewTiempoEspera);
-
-         if (totalAPagar == null){
-             totalAPagar.setText("0 €");
+          textViewProductosBurguerKing.setText(totalProdcutosBurguerKing);
+         if (precioFinalProductoBurgerKing == null){
+             totalAPagarBurguerKing.setText("0 €");
          } else {
-             totalAPagar.setText(precioFinalProducto);
-
+             totalAPagarBurguerKing.setText(precioFinalProductoBurgerKing);
          }
+        if (tiempoDeEsperaFinalBurguerKing == null){
+            tiempoDeEsperaBurguerKing.setText("Nada en el carrito");
+        } else {
+            tiempoDeEsperaBurguerKing.setText(tiempoDeEsperaFinalBurguerKing);
+        }
 
-        //if (tiempoDeEspera == null){
-        //            tiempoDeEspera.setText(" ");
-        //        } else {
-        //            tiempoDeEspera.setText(tiempoDeEsperaFinal);
-        //        }
+        Button botonPagar = (Button) v.findViewById(R.id.buttonPagar);
+        botonPagar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Fragment terminar = new Terminar();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, terminar, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
+
+            }
+        });
 
      return v;
     }

@@ -10,6 +10,7 @@ import android.view.MenuItem;
 
 import com.example.yonococinoapp.fragmentos.RestaurantesFragment;
 import com.example.yonococinoapp.fragmentos.ajustesFragment;
+import com.example.yonococinoapp.fragmentos.carritoFinalPago;
 import com.example.yonococinoapp.fragmentos.carritoFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -39,7 +40,7 @@ public class Inicio extends AppCompatActivity {
                     showSelectedFragment(new RestaurantesFragment());
                 }
                 if (menuItem.getItemId() == R.id.carrito){
-                    showSelectedFragment(new carritoFragment());
+                    showSelectedFragment(new carritoFinalPago());
                 }
                 if (menuItem.getItemId() == R.id.ajustes){
                     showSelectedFragment(new ajustesFragment());

@@ -58,7 +58,7 @@ public class SingIn extends AppCompatActivity {
         editTextContraseña = (EditText) findViewById(R.id.editPassword);
         buttonCrear = (Button) findViewById(R.id.CrearUsuario);
         buttonLogin = (Button) findViewById(R.id.LogIn);
-        logo = (ImageView) findViewById(R.id.imageView2);
+
 
         buttonCrear.setOnClickListener(new View.OnClickListener() {
             @Override

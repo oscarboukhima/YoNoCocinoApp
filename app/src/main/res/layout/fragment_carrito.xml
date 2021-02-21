@@ -13,48 +13,19 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="644dp">
-
-                <TextView
-                    android:id="@+id/textViewTituloTotal"
-                    android:layout_width="160dp"
-                    android:layout_height="36dp"
-                    android:text="Total a pagar : "
-                    android:textColor="#FFFFFF"
-                    android:textSize="24sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.211"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.695" />
-
-                <TextView
-                    android:id="@+id/textViewTotal "
-                    android:layout_width="161dp"
-                    android:layout_height="56dp"
-                    android:gravity="center"
-                    android:text="Total a pagar "
-                    android:textColor="#2196F3"
-                    android:textSize="24sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.88"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.705" />
+                android:layout_height="726dp">
 
                 <Button
                     android:id="@+id/buttonPagar"
                     android:layout_width="158dp"
                     android:layout_height="50dp"
                     android:background="#3F51B5"
-                    android:text="Button"
+                    android:text="PAGAR"
                     android:textColor="#FFFFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -65,15 +36,109 @@
 
                 <TextView
                     android:id="@+id/textViewTiempoEspera"
-                    android:layout_width="245dp"
-                    android:layout_height="63dp"
-                    android:text="TextView"
-                    android:textColor="#FFFFFF"
+                    android:layout_width="305dp"
+                    android:layout_height="34dp"
+                    android:text="sin productos no hay tiempo"
+                    android:textAlignment="viewStart"
+                    android:textColor="#03A9F4"
+                    android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.424"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.304" />
+                    app:layout_constraintVertical_bias="0.606" />
+
+                <TextView
+                    android:id="@+id/textViewMensajeTiempo"
+                    android:layout_width="326dp"
+                    android:layout_height="43dp"
+                    android:text="Tiempo estimado del pedido : "
+                    android:textAlignment="viewStart"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.529"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.532" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewPrecio"
+                    android:layout_width="327dp"
+                    android:layout_height="79dp"
+                    app:cardBackgroundColor="#009688"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.744">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewTotalPedido"
+                            android:layout_width="156dp"
+                            android:layout_height="41dp"
+                            android:gravity="center"
+                            android:text="Total a pagar "
+                            android:textColor="#FFFFFF"
+                            android:textSize="24sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.982"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.526" />
+
+                        <TextView
+                            android:id="@+id/textViewTituloTotal"
+                            android:layout_width="160dp"
+                            android:layout_height="36dp"
+                            android:text="Total a pagar : "
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="24sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.095"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.488" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="335dp"
+                    android:layout_height="244dp"
+                    app:cardBackgroundColor="#1D2763"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.565"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.18">
+
+                    <TextView
+                        android:id="@+id/textViewProductosAñadidos"
+                        android:layout_width="319dp"
+                        android:layout_height="245dp"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="10sp"
+                        android:padding="15dp"
+                        android:text="No hay productos  en el carrito"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+                </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>

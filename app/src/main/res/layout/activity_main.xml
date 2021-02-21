@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#201F1F"
+    android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
     android:paddingLeft="70dp"
 
@@ -15,11 +15,12 @@
     tools:context=".SingIn">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="271dp"
-        android:layout_height="83dp"
-        android:layout_marginBottom="30dp"
-        tools:srcCompat="@drawable/grupo1" />
+        android:id="@+id/imageView"
+        android:layout_width="272dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/grupo1" />
 
     <EditText
 
@@ -29,7 +30,7 @@
         android:layout_marginBottom="20dp"
         android:hint="Nombre"
         android:textColor="#FFFFFF"
-        android:textColorHint="@android:color/white" />
+        android:textColorHint="@android:color/secondary_text_light_nodisable" />
 
     <EditText
         android:id="@+id/editCorreo"
@@ -38,7 +39,8 @@
         android:layout_marginBottom="20dp"
         android:hint="correo"
         android:textColor="#FFFFFF"
-        android:textColorHint="@android:color/white" />
+        android:textColorHint="@android:color/secondary_text_dark_nodisable"
+        android:textColorLink="#FFFFFF" />
 
 
     <EditText
@@ -48,7 +50,7 @@
         android:layout_marginBottom="20dp"
         android:hint="Contraseña"
         android:textColor="#FFFFFF"
-        android:textColorHint="@android:color/white" />
+        android:textColorHint="@android:color/secondary_text_dark_nodisable" />
 
     <LinearLayout
         android:layout_width="match_parent"

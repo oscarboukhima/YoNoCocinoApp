@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.KFC">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0E1635">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1600dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="1600dp">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="94dp"
+                    android:layout_height="115dp"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/kfc"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.113"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvKFC1"
+                    android:layout_width="238dp"
+                    android:layout_height="42dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="KFC"
+                    android:textAlignment="viewStart"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.907"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.06" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="238dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="56dp"
+                    android:gravity="center"
+                    android:text="Productos"
+                    android:textAlignment="viewStart"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="@id/textViewAñadir"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.208"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.17" />
+
+                <Button
+                    android:id="@+id/buttonAñadirFinal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewAñadir"
+                    app:layout_constraintVertical_bias="0.0"
+                    android:layout_width="176dp"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginBottom="719dp"
+                    android:background="@color/colorPrincipal"
+                    android:textColor="#FFFFFF"
+                    tools:text="Añadir" />
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.493"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.168"
+                    android:layout_width="338dp"
+                    android:layout_height="102dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#009688">
+
+                        <TextView
+                            android:id="@+id/tvKFCProducto1"
+                            android:layout_width="152dp"
+                            android:layout_height="54dp"
+                            android:layout_marginStart="27dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="TwisterWrap"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/tvKFCPrecio1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvKFCPrecio1"
+                            android:layout_width="76dp"
+                            android:layout_height="54dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="4.59€"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/radioButtonKFC1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonKFC1"
+                            android:layout_width="60dp"
+                            android:layout_height="54dp"
+                            android:layout_marginEnd="24dp"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#323232"
+                            android:textColorHint="#535353"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.417"
+                    android:layout_width="338dp"
+                    android:layout_height="102dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#009688">
+
+                        <TextView
+                            android:id="@+id/tvKFCProducto4"
+                            android:layout_width="152dp"
+                            android:layout_height="54dp"
+                            android:layout_marginStart="27dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="Kentucky Fries Cheddar"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/tvKFCPrecio4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvKFCPrecio4"
+                            android:layout_width="76dp"
+                            android:layout_height="54dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="2.89€"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/radioButtonKFC4"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonKFC4"
+                            android:layout_width="60dp"
+                            android:layout_height="54dp"
+                            android:layout_marginEnd="24dp"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#323232"
+                            android:textColorHint="#535353"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.255"
+                    android:layout_width="338dp"
+                    android:layout_height="102dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#2196F3">
+
+                        <TextView
+                            android:id="@+id/tvKFCProducto2"
+                            android:layout_width="152dp"
+                            android:layout_height="54dp"
+                            android:gravity="center"
+                            android:text="La infame"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/tvKFCPrecio2"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvKFCPrecio2"
+                            android:layout_width="76dp"
+                            android:layout_height="54dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="5.99€"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/radioButtonKFC2"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonKFC2"
+                            android:layout_width="60dp"
+                            android:layout_height="54dp"
+                            android:layout_marginEnd="24dp"
+                            android:textAlignment="center"
+                            android:textColor="#323232"
+                            android:textColorHint="#535353"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textViewAñadir"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.367"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView"
+                    android:layout_width="313dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="52dp"
+                    android:text="Seleccion los productos que quiera comprar para añadir al carrito"
+                    android:textColor="#FFFFFF" />
+
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                    android:layout_width="338dp"
+                    android:layout_height="102dp"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="36dp"
+                    android:layout_marginBottom="17dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00BCD4">
+
+                        <TextView
+                            android:id="@+id/tvKFCProducto3"
+                            android:layout_width="152dp"
+                            android:layout_height="54dp"
+                            android:layout_marginStart="27dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="Chick and share "
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/tvKFCPrecio3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvKFCPrecio3"
+                            android:layout_width="76dp"
+                            android:layout_height="54dp"
+                            android:gravity="center"
+                            android:text="9.99€"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/radioButtonKFC3"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonKFC3"
+                            android:layout_width="60dp"
+                            android:layout_height="54dp"
+                            android:layout_marginEnd="24dp"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#323232"
+                            android:textColorHint="#535353"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

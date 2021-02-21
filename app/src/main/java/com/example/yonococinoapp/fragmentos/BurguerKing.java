@@ -1,6 +1,5 @@
 package com.example.yonococinoapp.fragmentos;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.yonococinoapp.R;
@@ -41,6 +41,8 @@ public class BurguerKing extends Fragment {
     double precioLongChicken = 5.99;
     double precioBacon = 6.99;
     String tiempoDeEspera ;
+    String conjuntoPedido;
+    String totalProductosPedidos ="";
     int unNumero = 100;
 
 
@@ -93,6 +95,15 @@ public class BurguerKing extends Fragment {
         final RadioButton radioButtonLongChicken = (RadioButton) v.findViewById(R.id.radioButtonLongChicken) ;
         final RadioButton radioButtonBigKing = (RadioButton) v.findViewById(R.id.radioButtonBigKing) ;
 
+        final TextView textViewWopper = (TextView) v.findViewById(R.id.textViewWopper);
+        final TextView textViewBacon = (TextView) v.findViewById(R.id.textViewBacon);
+        final TextView textViewLongChicken = (TextView) v.findViewById(R.id.textView);
+        final TextView textViewBigKing = (TextView) v.findViewById(R.id.textViewBigKing);
+
+
+
+
+
         Button botonAñadir = (Button) v.findViewById(R.id.buttonAñadirFinal);
 
         
@@ -106,20 +117,26 @@ public class BurguerKing extends Fragment {
                     if (radioButtonWopper.isChecked()){
                         precioTotalFinal = precioTotalFinal +precioWopper;
                         numeroDeProductos = numeroDeProductos+1;
+                        totalProductosPedidos = " Hamburguesa Wopper ";
                     }
                     if (radioButtonBigKing.isChecked()){
                         precioTotalFinal =precioTotalFinal+ precioBigKing;
                         numeroDeProductos = numeroDeProductos+1;
+                        totalProductosPedidos = totalProductosPedidos + " \n Hamburguesa Big King ";
                     }
                     if (radioButtonLongChicken.isChecked()){
                         precioTotalFinal =precioTotalFinal+ precioLongChicken;
                         numeroDeProductos = numeroDeProductos+1;
+                        totalProductosPedidos = totalProductosPedidos + " \n Hamburguesa Long Chicken ";
                     }
                     if (radioButtonBacon.isChecked()){
                         precioTotalFinal = precioTotalFinal+ precioBacon;
                         numeroDeProductos = numeroDeProductos+1;
+                        totalProductosPedidos = totalProductosPedidos + " \n Hamburguesa Bacon ";
                     }
-                    
+
+
+
                     setPrecioTotalFinal(precioTotalFinal);
                     Toast.makeText(getActivity(), "Se han añadido " + numeroDeProductos + "Productos  : " + precioTotalFinal, Toast.LENGTH_SHORT).show();
 
@@ -127,17 +144,21 @@ public class BurguerKing extends Fragment {
                         case 1:
                             tiempoDeEspera = "30 MINUTOS";
                             setTiempoDeEspera(tiempoDeEspera);
+                            conjuntoPedido = "TOTAL PRODUCTOS : 1";
                             break;
                         case 2:
-                            tiempoDeEspera = "45MINUTOS";
+                            tiempoDeEspera = "45 MINUTOS";
                             setTiempoDeEspera(tiempoDeEspera);
+                            conjuntoPedido = "TOTAL PRODUCTOS : 2";
                             break;
                         case 3:
                             tiempoDeEspera = "50 MINUTOS";
                             setTiempoDeEspera(tiempoDeEspera);
+                            conjuntoPedido = "TOTAL PRODUCTOS : 3";
                             break;
                         case 4:
                             tiempoDeEspera = "1 HORA Y 10 MINUTOS";
+                            conjuntoPedido = "TOTAL PRODUCTOS : 4";
                             setTiempoDeEspera(tiempoDeEspera);
                             break;
                         default:
@@ -146,20 +167,22 @@ public class BurguerKing extends Fragment {
                     }
 
 
+
+
                     radioButtonBacon.setChecked(false);
                     radioButtonBigKing.setChecked(false);
                     radioButtonLongChicken.setChecked(false);
                     radioButtonWopper.setChecked(false);
 
                     Bundle bundle = new Bundle();
-                    Bundle bundleTiempoDeEspera = new Bundle();
 
                     bundle.putString("key", Double.toString(getPrecioTotalFinal()));
-                    bundleTiempoDeEspera.putString("key", getTiempoDeEspera());
+                    bundle.putString("key2",getTiempoDeEspera());
+                    bundle.putString("key3",getTotalProductosPedidos());
 
                     Fragment fragment = new carritoFragment();
                     fragment.setArguments(bundle);
-                    //fragment.setArguments(bundleTiempoDeEspera);
+
 
                     getActivity().getSupportFragmentManager().beginTransaction()
                             .replace(R.id.container, fragment, "findThisFragment")
@@ -174,8 +197,15 @@ public class BurguerKing extends Fragment {
     }
 
 
-    
-    
+    public String getTotalProductosPedidos() {
+        return totalProductosPedidos;
+
+    }
+
+    public void setTotalProductosPedidos(String totalProductosPedidos) {
+        this.totalProductosPedidos = totalProductosPedidos;
+    }
+
     public double  getPrecioTotalFinal() {
 
         return precioTotalFinal;
@@ -185,8 +215,8 @@ public class BurguerKing extends Fragment {
     public  void setPrecioTotalFinal(  double precioTotalFinal) {
         this.precioTotalFinal = precioTotalFinal;
         System.out.println(precioTotalFinal);
-
     }
+
 
     public String getTiempoDeEspera() {
         return tiempoDeEspera;

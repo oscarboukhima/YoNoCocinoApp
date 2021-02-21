@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E1635"
+    tools:context=".fragmentos.Dominos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1600dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="1600dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="94dp"
+                    android:layout_height="115dp"
+                    android:layout_marginTop="56dp"
+                    android:src="@drawable/dominos"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.113"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDominos1"
+                    android:layout_width="238dp"
+                    android:layout_height="42dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="DOMINO'S PIZZA"
+                    android:textAlignment="viewStart"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.907"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.06" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="238dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="56dp"
+                    android:text="Productos"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.208"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.09" />
+
+                <Button
+                    android:id="@+id/buttonAñadirFinal"
+                    android:layout_width="176dp"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginBottom="719dp"
+                    android:background="@color/colorPrincipal"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewAñadir"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:text="Añadir" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="338dp"
+                    android:layout_height="102dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.168">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#009688">
+
+                        <TextView
+                            android:id="@+id/textViewDominosProducto1"
+                            android:layout_width="152dp"
+                            android:layout_height="54dp"
+                            android:layout_marginStart="27dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="Pizza familiar a elegir"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/textViewPrecioDominos1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textViewPrecioDominos1"
+                            android:layout_width="76dp"
+                            android:layout_height="54dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="19.90€"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/radioButtonDominos1"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonDominos1"
+                            android:layout_width="60dp"
+                            android:layout_height="54dp"
+                            android:layout_marginEnd="24dp"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#323232"
+                            android:textColorHint="#535353"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="338dp"
+                    android:layout_height="102dp"
+                    app:cardCornerRadius="10dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.417">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#009688">
+
+                        <TextView
+                            android:id="@+id/textViewDominosProducto4"
+                            android:layout_width="152dp"
+                            android:layout_height="54dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="Pa Ke Compartas (pizza mediana + 2 entrantes)"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/textViewPrecioDominos4"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textViewPrecioDominos4"
+                            android:layout_width="76dp"
+                            android:layout_height="54dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="15.95€"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/radioButtonDominos4"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonDominos4"
+                            android:layout_width="60dp"
+                            android:layout_height="54dp"
+                            android:layout_marginEnd="24dp"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#323232"
+                            android:textColorHint="#53535353"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="338dp"
+                    android:layout_height="102dp"
+                    app:cardCornerRadius="10dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.255">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#2196F3">
+
+                        <TextView
+                            android:id="@+id/textViewDominosProducto2"
+                            android:layout_width="152dp"
+                            android:layout_height="54dp"
+                            android:layout_marginStart="27dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="Combo Patatas + Alitas"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/textViewPrecioDominos2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textViewPrecioDominos2"
+                            android:layout_width="76dp"
+                            android:layout_height="54dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="4.50€"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/radioButtonDominos2"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonDominos2"
+                            android:layout_width="60dp"
+                            android:layout_height="54dp"
+                            android:layout_marginEnd="24dp"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#323232"
+                            android:textColorHint="#535353"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textViewAñadir"
+                    android:layout_width="313dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="52dp"
+                    android:text="Seleccion los productos que quiera comprar para añadir al carrito"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.367"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="338dp"
+                    android:layout_height="102dp"
+                    android:layout_marginStart="36dp"
+
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="36dp"
+                    android:layout_marginBottom="17dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00BCD4">
+
+                        <TextView
+                            android:id="@+id/textViewDominosProducto3"
+                            android:layout_width="152dp"
+                            android:layout_height="54dp"
+                            android:layout_marginStart="27dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="Pizza Mediana a elegir"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/textViewPrecioDominos3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textViewPrecioDominos3"
+                            android:layout_width="76dp"
+                            android:layout_height="54dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:gravity="center"
+                            android:text="12.95€"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/radioButtonDominos3"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonDominos3"
+                            android:layout_width="60dp"
+                            android:layout_height="54dp"
+                            android:layout_marginEnd="24dp"
+                            android:textAlignment="center"
+                            android:textColor="#323232"
+                            android:textColorHint="#535353"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

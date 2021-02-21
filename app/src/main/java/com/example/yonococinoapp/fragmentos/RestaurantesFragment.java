@@ -68,12 +68,22 @@ public class RestaurantesFragment extends Fragment {
         View v =  inflater.inflate(R.layout.fragment_restaurantes, container, false);
 
         ImageView BurguerKingLogo = (ImageView) v.findViewById(R.id.ivBurger);
+        ImageView CienMonLogo = (ImageView) v.findViewById(R.id.iv100mon);
 
         BurguerKingLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 BurguerKing BurguerKingFragment = new BurguerKing();
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, BurguerKingFragment, "findThisFragment").addToBackStack(null).commit();
+            }
+        });
+
+
+        CienMonLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CienMon cienMonFrag = new CienMon();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, cienMonFrag, "findThisFragment").addToBackStack(null).commit();
             }
         });
 

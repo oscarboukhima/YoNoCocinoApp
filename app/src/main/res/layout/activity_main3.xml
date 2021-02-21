@@ -5,13 +5,13 @@
     android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#323131"
+    android:background="@color/colorPrimaryDark"
     tools:context=".Inicio">
 
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="646dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"></FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="88dp"
         android:layout_gravity="bottom"
-        android:background="@color/colorPrimary"
+        android:background="#3F51B5"
         app:itemIconTint="@color/colorBlanco"
         app:itemTextColor="@color/colorBlanco"
         app:menu="@menu/main_menu" />
