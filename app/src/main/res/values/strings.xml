@@ -6,4 +6,14 @@
     <string name="CrearUsuario">REGISTARSE</string>
     <string name="LogIn">LOGIN</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logOut">Cerrar Sesion</string>
+    <string name="Aplicar">aplicar</string>
+    <string name="restaurants">Restaurantes</string>
+    <string name="bag">Carrito</string>
+    <string name="Ajustes">Ajustes</string>
+    <string name="AjustesFrase1">Aqui podrás cambiar todos los ajustes de perfil, como el nombre de usuario y contraseña</string>
+    <string name="AjustesFraseCerrarSesion">Si deseas cerrar sesión haz click en el boton "Cerrar Sesion"</string>
+    <string name="nuevoNombre">Nuevo Nombre de Usuario</string>
+    <string name="nuevaContraseña">Nueva Contraseña</string>
+    <string name="ajustesCuenta">Ajustes Cuenta</string>
 </resources>

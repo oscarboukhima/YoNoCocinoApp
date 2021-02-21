@@ -428,7 +428,7 @@
                             <TextView
                                 android:id="@+id/tvtxtRestaurante2"
                                 android:layout_width="match_parent"
-                                android:layout_height="52dp"
+                                android:layout_height="40dp"
                                 android:gravity="center_vertical"
                                 android:text='"Solo para personas hambrientas"'
                                 android:textColor="@color/colorBlanco" />

@@ -30,9 +30,7 @@ public class CienMon extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public CienMon() {
-        // Required empty public constructor
-    }
+    final double precioInicialCienMon = 0;
 
     double precioTotalFinalCienMon = 0;
     double precioProductoCienmon1 = 2.0 ;
@@ -42,6 +40,12 @@ public class CienMon extends Fragment {
     String tiempoDeEsperaCienMon;
     String conjuntoPedidoCienMOn;
     String totalProductosPedidosCienMon ="";
+
+    public CienMon() {
+        // Required empty public constructor
+    }
+
+
 
     /**
      * Use this factory method to create a new instance of
@@ -74,7 +78,7 @@ public class CienMon extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View v =  inflater.inflate(R.layout.fragment_burguer_king, container, false);
+        final View v =  inflater.inflate(R.layout.fragment_cien_mon, container, false);
 
         final RadioButton radioCienMon1 = (RadioButton) v.findViewById(R.id.radioButtonCienMon1) ;
         final RadioButton radioCienMon2 = (RadioButton) v.findViewById(R.id.radioButtonCienMon2) ;

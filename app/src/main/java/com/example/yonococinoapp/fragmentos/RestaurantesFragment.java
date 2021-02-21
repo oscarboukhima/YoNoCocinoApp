@@ -69,6 +69,14 @@ public class RestaurantesFragment extends Fragment {
 
         ImageView BurguerKingLogo = (ImageView) v.findViewById(R.id.ivBurger);
         ImageView CienMonLogo = (ImageView) v.findViewById(R.id.iv100mon);
+        ImageView DominosLogo = (ImageView) v.findViewById(R.id.ivDominos);
+        ImageView FosterLogo = (ImageView) v.findViewById(R.id.ivFoster);
+        ImageView GoikoLogo = (ImageView) v.findViewById(R.id.ivGoiko);
+        ImageView McDldsLogo = (ImageView) v.findViewById(R.id.ivMcdonalds);
+        ImageView KFCLogo = (ImageView) v.findViewById(R.id.ivKFC);
+        ImageView VipsLogo = (ImageView) v.findViewById(R.id.ivVips);
+        ImageView Res1Logo = (ImageView) v.findViewById(R.id.ivRestaurante1);
+        ImageView Res2Logo = (ImageView) v.findViewById(R.id.ivRestaurante2);
 
         BurguerKingLogo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,6 +94,95 @@ public class RestaurantesFragment extends Fragment {
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, cienMonFrag, "findThisFragment").addToBackStack(null).commit();
             }
         });
+
+        DominosLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Dominos DominosFragment = new Dominos();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, DominosFragment, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        FosterLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Foster FosterFragment = new Foster();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, FosterFragment, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        GoikoLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Goiko GoikoFragment = new Goiko();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, GoikoFragment, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+        KFCLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                KFC kfcFragment = new KFC();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, kfcFragment, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+        McDldsLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                McDonalds mcDonaldsFragment = new McDonalds();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, mcDonaldsFragment, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+        Res1Logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Restaurante2 restaurante2Fragment = new Restaurante2();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, restaurante2Fragment, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+        Res2Logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Restaurante1 restaurante1Fragment = new Restaurante1();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, restaurante1Fragment, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+        VipsLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Vips VipsFragment = new Vips();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, VipsFragment, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+
+
+
 
         return v;
     }

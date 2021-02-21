@@ -87,6 +87,7 @@ public class carritoFragment extends Fragment {
         //System.out.println(bk.getPrecioTotalFinal());
         final Bundle bundle = this.getArguments();
 
+
         //String precioFinalProductoBurgerKing = "SIN PRODUCTOS";
         //String tiempoDeEsperaFinalBurguerKing = "SIN PRODCUTOS";
 
@@ -95,6 +96,8 @@ public class carritoFragment extends Fragment {
          String precioFinalProductoBurgerKing = bundle.getString("key");
          String tiempoDeEsperaFinalBurguerKing = bundle.getString("key2");
          String totalProdcutosBurguerKing = bundle.getString("key3");
+
+
 
 
           TextView totalAPagarBurguerKing = (TextView) v.findViewById(R.id.textViewTotalPedido);

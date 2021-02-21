@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YoNoCocinoApp</string>
+    <string name="editNombreDeUsuario" >Name</string>
+    <string name="editCorreo">E-mail</string>
+    <string name="editPassword">Password</string>
+    <string name="CrearUsuario">Register</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="bag">Bag</string>
+    <string name="Ajustes">Settings</string>
+    <string name="AjustesFrase1">Here you will be able to change all preferencies</string>
+    <string name="AjustesFraseCerrarSesion">If you want to log out click the bottom button</string>
+    <string name="nuevoNombre">New User Name</string>
+    <string name="nuevaContraseña">New User password</string>
+    <string name="logOut">LogOut</string>
+    <string name="Aplicar">Aplly</string>
+    <string name="ajustesCuenta">Acount Settings</string>
+
+
+
+
+</resources>
